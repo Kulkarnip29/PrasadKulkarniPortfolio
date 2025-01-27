@@ -2,7 +2,7 @@ import React from 'react'
 import { image } from "framer-motion/client";
 
 const Trainings = () => {
-  const projects = [
+  const trainings = [
     {
       id: 1,
       title: "Full Stack Web Development",
@@ -10,7 +10,7 @@ const Trainings = () => {
       image: "Full-Stack.png",
       url: "#"
     },
-    // Add more projects here
+    // Add more trainings here
     {
       id: 2,
       title: ".Net Full Stack Development",
@@ -20,7 +20,7 @@ const Trainings = () => {
     },
   ];
   return (
-    <div name="projects" className="w-full h-screen bg-primary text-white">
+    <div name="trainings" className="w-full h-screen bg-primary text-white">
     <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
       <div className="pb-8">
         <p className="text-4xl font-bold inline border-b-4 border-gray-500">
@@ -29,7 +29,7 @@ const Trainings = () => {
         <p className="py-6">Check out some of my Trainings And Certifications </p>
       </div>
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {projects.map(({ id, title, description, image, url }) => (
+        {trainings.map(({ id, title, description, image, url }) => (
           <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
             <img
               src={image}

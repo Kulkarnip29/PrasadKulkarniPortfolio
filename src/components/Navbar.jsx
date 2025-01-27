@@ -7,7 +7,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   const links = [
-    { id: 1, link: 'home' },
+    { id: 1, link: 'hero' },
     { id: 2, link: 'about' },
     { id: 3, link: 'experience' },
     { id: 4, link: 'trainings'},
@@ -21,8 +21,9 @@ const Navbar = () => {
     <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed nav z-50">
       <div>
         <h1 className="text-5xl font-signature ml-2">
-          <ScrollLink to="home" smooth duration={500} className="cursor-pointer">
-            PRASAD <sup className='subscript font-semibold w-1 h-0  text-wrap'>Portfolio</sup>
+          <ScrollLink to="hero" smooth duration={500} className="cursor-pointer">
+            <u className="text-yellow-300">port</u><i>f</i><u className="text-blue-500">olio</u>
+            {/* PRASAD <sup className='subscript font-semibold w-1 h-0  text-wrap'>Portfolio</sup> */}
           </ScrollLink>
         </h1>
       </div>
@@ -39,7 +40,7 @@ const Navbar = () => {
               duration={500}
               offset={-80}
               spy
-              activeClass="text-white"
+              activeClass="text-blue-600"
             >
               {link}
             </ScrollLink>
