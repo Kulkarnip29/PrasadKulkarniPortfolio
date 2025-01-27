@@ -1,43 +1,85 @@
+import { motion } from 'framer-motion';
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+
 const Contact = () => {
   return (
-    <div name="contact" className="w-full h-screen bg-primary text-white">
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+    <div name="contact" className="w-full min-h-screen bg-primary text-white py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-screen-lg mx-auto flex flex-col justify-center w-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+          <motion.h2 
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="text-4xl font-extrabold inline border-b-4 border-gray-500"
+          >
             Contact
-          </p>
-          <p className="py-6">Submit the form below to get in touch with me</p>
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="py-6 text-lg leading-relaxed"
+          >
+            Feel free to reach out by submitting the form below, and I will get back to you promptly.
+          </motion.p>
         </div>
-        
-        <div className="flex justify-center items-center">
-          <form
+
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
+          <motion.div 
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            className="space-y-6 text-lg"
+          >
+            <div className="flex items-center space-x-4">
+              <FaPhoneAlt className="text-cyan-500" size={24} />
+              <span>+91-9607482906</span>
+            </div>
+            <div className="flex items-center space-x-4">
+              <FaEnvelope className="text-cyan-500" size={24} />
+              <span>prasadkulkarni32596@gmail.com</span>
+            </div>
+            <div className="flex items-center space-x-4">
+              <FaMapMarkerAlt className="text-cyan-500" size={24} />
+              <span>India</span>
+            </div>
+          </motion.div>
+
+          <motion.form
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
             action="https://getform.io/f/YOUR_FORM_ID"
             method="POST"
-            className="flex flex-col w-full md:w-1/2"
+            className="flex flex-col bg-primary p-8 rounded-lg shadow-lg"
           >
             <input
               type="text"
               name="name"
               placeholder="Enter your name"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="p-3 mb-4 bg-transparent border-2 rounded-md text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-500"
             />
             <input
-              type="text"
+              type="email"
               name="email"
               placeholder="Enter your email"
-              className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="p-3 mb-4 bg-transparent border-2 rounded-md text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-500"
             />
             <textarea
               name="message"
-              rows="10"
+              rows="6"
               placeholder="Enter your message"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="p-3 mb-4 bg-transparent border-2 rounded-md text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-500"
             ></textarea>
             
-            <button className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
-              Let's talk
-            </button>
-          </form>
+            <motion.button 
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 px-8 py-3 mt-6 mx-auto flex items-center justify-center rounded-md font-bold text-lg hover:shadow-lg transition-transform duration-300"
+            >
+              Let's Talk
+            </motion.button>
+          </motion.form>
         </div>
       </div>
     </div>
