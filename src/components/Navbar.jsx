@@ -10,10 +10,11 @@ const Navbar = () => {
     { id: 1, link: 'home' },
     { id: 2, link: 'about' },
     { id: 3, link: 'experience' },
-    { id: 4, link: 'projects' },
-    { id: 5, link: 'skills' },
-    { id: 6, link: 'education' },
-    { id: 7, link: 'contact' },
+    { id: 4, link: 'trainings'},
+    { id: 5, link: 'projects' },
+    { id: 6, link: 'skills' },
+    { id: 7, link: 'education' },
+    { id: 8, link: 'contact' },
   ];
 
   return (
