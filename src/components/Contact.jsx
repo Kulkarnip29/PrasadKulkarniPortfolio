@@ -49,7 +49,7 @@ const Contact = () => {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
-            action="https://getform.io/f/YOUR_FORM_ID"
+            action="https://getform.io/f/bpjnjzxb"
             method="POST"
             className="flex flex-col bg-primary p-8 rounded-lg shadow-lg"
           >
