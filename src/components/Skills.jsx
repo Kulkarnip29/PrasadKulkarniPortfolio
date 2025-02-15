@@ -8,7 +8,8 @@ import {
   FaGitAlt,
   FaNpm,
   FaDatabase,
-  FaAws
+  FaAws,
+  FaBootstrap
 } from 'react-icons/fa';
 import {
   SiMongodb,
@@ -18,7 +19,8 @@ import {
   SiDotnet,
   SiWordpress,
   SiNextdotjs,
-  SiGithub
+  SiGithub,
+  SiPhp
 } from 'react-icons/si';
 
 const Skills = () => {
@@ -27,20 +29,22 @@ const Skills = () => {
     { name: "CSS", icon: <FaCss3Alt size={50} className="text-blue-500" /> },
     { name: "JavaScript", icon: <FaJs size={50} className="text-yellow-400" /> },
     { name: "React", icon: <FaReact size={50} className="text-cyan-400" /> },
+    { name: "npm", icon: <FaNpm size={50} className="text-red-500" /> },
+    { name: "Tailwind", icon: <SiTailwindcss size={50} className="text-cyan-400" /> },
+    { name: "Bootstrap", icon: <FaBootstrap size={45} className="text-blue-800" />},
+    { name: "Redux", icon: <SiRedux size={50} className="text-purple-500" /> },
     { name: "Next Js", icon: <SiNextdotjs size={50} className="text-gray-500"/>},
     { name: "Node.js", icon: <FaNodeJs size={50} className="text-green-500" /> },
-    { name: ".Net", icon: <SiDotnet size={50} className="text-purple-500" />},
-    { name: "Java", icon: <FaJava  size={50} className="text-white-100" />},
     { name: "Express", icon: <SiExpress size={50} className="text-gray-500" /> },
     { name: "MongoDB", icon: <SiMongodb size={50} className="text-green-600" /> },
-    { name: "Redux", icon: <SiRedux size={50} className="text-purple-500" /> },
+    { name: ".Net", icon: <SiDotnet size={50} className="text-purple-500" />},
+    { name: "Java", icon: <FaJava  size={50} className="text-white-100" />},    
     { name: "Git", icon: <FaGitAlt size={50} className="text-orange-600" /> },
     { name: "GitHub", icon: <SiGithub size={50} className="text-gray-400"/>},
-    { name: "npm", icon: <FaNpm size={50} className="text-red-500" /> },
     { name: "SQL", icon: <FaDatabase size={50} className="text-blue-400" /> },
     {name: "Aws", icon: <FaAws size={50} className="text-orange-500"/>},
-    { name: "Tailwind", icon: <SiTailwindcss size={50} className="text-cyan-400" /> },
-    { name: "WordPress", icon: <SiWordpress size={50} className="text-sky-600"/>}
+    { name: "WordPress", icon: <SiWordpress size={50} className="text-sky-600"/>},
+    { name: "php", icon: <SiPhp size={50} className="text-purple-600"/>}
   ];
 
   const interpersonalSkills = [
