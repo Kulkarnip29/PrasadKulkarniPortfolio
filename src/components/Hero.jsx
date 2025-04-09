@@ -8,7 +8,7 @@ const Hero = () => {
           {/* Text Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left mt-8 lg:mt-0">
             <h1 className="font-black text-white text-4xl sm:text-5xl lg:text-6xl xl:text-[80px] leading-tight lg:leading-[98px]">
-              Hi, I'm <span className="text-[#915EFF]">Prasad Kulkarni</span>
+              Hi, I'm <span className="text-[#915EFF]">Kulkarni Prasad</span>
             </h1>
             <p className="text-[#dfd9ff] font-medium text-lg sm:text-xl lg:text-2xl xl:text-[30px] mt-4 lg:mt-6">
               I develop web applications, user{" "}

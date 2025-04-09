@@ -10,7 +10,7 @@ const Resume = () => {
             Take a closer look at my professional journey, skills, and accomplishments.
           </p>
           <a
-            href="https://drive.google.com/file/d/1mt2IZ55kqiR0BN3hbreHL2qRw-iF1q9L/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1-TPH8jcJ7Ks9wp83tJfKjD7HqNJMvuH5/view?usp=sharing"
             download="PrasadKulkarni_Resume.pdf"
             className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-full font-bold text-lg shadow-md hover:shadow-lg hover:bg-opacity-90 transition-transform duration-300 transform hover:scale-105"
           >
