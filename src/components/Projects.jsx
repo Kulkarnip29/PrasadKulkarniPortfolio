@@ -8,7 +8,7 @@ const Projects = () => {
       title: "S M Sanskar Bharti School Project",
       description:
         "I developed the official website for Shree S M Sanskar Bharti Public School using Vite and Tailwind CSS, ensuring a clean, responsive, and user-friendly design. The site features well-structured sections such as Home, About, Academics, Admissions, Gallery, and Contact, with smooth navigation and optimized layouts for mobile and desktop. It includes an event photo gallery and a functional contact form for inquiries. Deployed on Netlify with GitHub integration for continuous deployment, the project also incorporates SEO essentials like meta tags and Google Search Console verification. This project demonstrates my skills in front-end development, deployment, and SEO optimization.",
-      image: "S M Sanskar Bharti School Freelancing project",
+      image: "SM Sanskarbhartipublicschoolwerb.png",
       url: "https://shreeswamisamrthedu.netlify.app/",
     },
 

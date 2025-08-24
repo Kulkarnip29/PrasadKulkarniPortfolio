@@ -43,7 +43,7 @@ const Skills = () => {
     { name: "Golang", icon: <SiGo size={50} className="text-blue-500" /> },
     { name: "Vue Js", icon: <FaVuejs size={50} className="text-green-400" />},
     { name: ".Net", icon: <SiDotnet size={50} className="text-purple-500" />},
-    { name: "Java", icon: <FaJava  size={50} className="text-white-100" />},    
+    { name: "Java", icon: <FaJava  size={50} className="text-orange-100" />},    
     { name: "Git", icon: <FaGitAlt size={50} className="text-orange-600" /> },
     { name: "GitHub", icon: <SiGithub size={50} className="text-gray-400"/>},
     { name: "SQL", icon: <FaDatabase size={50} className="text-blue-400" /> },
