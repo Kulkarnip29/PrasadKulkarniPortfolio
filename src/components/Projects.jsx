@@ -5,6 +5,15 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: "S M Sanskar Bharti School Project",
+      description:
+        "I developed the official website for Shree S M Sanskar Bharti Public School using Vite and Tailwind CSS, ensuring a clean, responsive, and user-friendly design. The site features well-structured sections such as Home, About, Academics, Admissions, Gallery, and Contact, with smooth navigation and optimized layouts for mobile and desktop. It includes an event photo gallery and a functional contact form for inquiries. Deployed on Netlify with GitHub integration for continuous deployment, the project also incorporates SEO essentials like meta tags and Google Search Console verification. This project demonstrates my skills in front-end development, deployment, and SEO optimization.",
+      image: "S M Sanskar Bharti School Freelancing project",
+      url: "https://shreeswamisamrthedu.netlify.app/",
+    },
+
+    {
+      id: 2,
       title: "Nike_Clone",
       description:
         "Nike Store online E-Commerce Platform Developed using React Js, Javascript and Tailwind Css",
@@ -12,12 +21,12 @@ const Projects = () => {
       url: "https://675c3d3c8e8b42269d538365--nikecloneprasadk.netlify.app/",
     },
     {
-      id: 2,
+      id: 3,
       title: "ProtfolioWeb",
       description:
         "Personal Portfolio website Developed Using React Js, Javascript, TailwindCSS Check it Out!!",
       image: "Portfolio_website.png",
-      url: "http://localhost:5173/",
+      url: "https://prasadkulkarniportfolio.netlify.app/",
     },
   ];
 

@@ -9,7 +9,8 @@ import {
   FaNpm,
   FaDatabase,
   FaAws,
-  FaBootstrap
+  FaBootstrap,
+  FaVuejs,
 } from 'react-icons/fa';
 import {
   SiMongodb,
@@ -20,7 +21,9 @@ import {
   SiWordpress,
   SiNextdotjs,
   SiGithub,
-  SiPhp
+  SiPhp,
+  SiGo,
+  
 } from 'react-icons/si';
 
 const Skills = () => {
@@ -34,9 +37,11 @@ const Skills = () => {
     { name: "Bootstrap", icon: <FaBootstrap size={45} className="text-blue-800" />},
     { name: "Redux", icon: <SiRedux size={50} className="text-purple-500" /> },
     { name: "Next Js", icon: <SiNextdotjs size={50} className="text-gray-500"/>},
-    { name: "Node.js", icon: <FaNodeJs size={50} className="text-green-500" /> },
+    { name: "Node js", icon: <FaNodeJs size={50} className="text-green-500" /> },
     { name: "Express", icon: <SiExpress size={50} className="text-gray-500" /> },
     { name: "MongoDB", icon: <SiMongodb size={50} className="text-green-600" /> },
+    { name: "Golang", icon: <SiGo size={50} className="text-blue-500" /> },
+    { name: "Vue Js", icon: <FaVuejs size={50} className="text-green-400" />},
     { name: ".Net", icon: <SiDotnet size={50} className="text-purple-500" />},
     { name: "Java", icon: <FaJava  size={50} className="text-white-100" />},    
     { name: "Git", icon: <FaGitAlt size={50} className="text-orange-600" /> },
