@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const Projects = () => {
@@ -11,10 +11,9 @@ const Projects = () => {
       image: "SM Sanskarbhartipublicschoolwerb.png",
       url: "https://shreeswamisamrthedu.netlify.app/",
     },
-
     {
       id: 2,
-      title: "Nike_Clone",
+      title: "Nike Clone",
       description:
         "Nike Store online E-Commerce Platform Developed using React Js, Javascript and Tailwind Css",
       image: "nikecloneIMG.png",
@@ -22,18 +21,24 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "ProtfolioWeb",
+      title: "Portfolio Website",
       description:
-        "Personal Portfolio website Developed Using React Js, Javascript, TailwindCSS Check it Out!!",
+        "Personal Portfolio website Developed Using React Js, Javascript, TailwindCSS. Check it out!",
       image: "Portfolio_website.png",
       url: "https://prasadkulkarniportfolio.netlify.app/",
     },
   ];
 
+  const [readMore, setReadMore] = useState({});
+
+  const toggleReadMore = (id) => {
+    setReadMore((prev) => ({ ...prev, [id]: !prev[id] }));
+  };
+
   return (
     <div
       name="projects"
-      className="w-full min-h-screen bg-primary text-white py-16 px-4 sm:px-6 lg:px-8"
+      className="w-full min-h-screen bg-gradient-to-r from-purple-900 via-purple-800 to-indigo-900 text-white py-16 px-4 sm:px-6 lg:px-8"
     >
       <motion.div
         initial={{ opacity: 0, y: 100 }}
@@ -41,11 +46,11 @@ const Projects = () => {
         transition={{ duration: 0.8 }}
         className="max-w-screen-lg mx-auto flex flex-col justify-center"
       >
-        <div className="pb-8">
+        <div className="pb-8 text-center">
           <h2 className="text-4xl font-bold inline border-b-4 border-gray-500">
             Projects
           </h2>
-          <p className="py-6">Check out some of my work</p>
+          <p className="py-6 text-lg sm:text-xl">Check out some of my work</p>
         </div>
 
         <motion.div
@@ -60,25 +65,35 @@ const Projects = () => {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 * id }}
-              className="shadow-md shadow-gray-600 rounded-lg bg-tertiary p-6 hover:shadow-xl transition-shadow"
+              className="bg-tertiary rounded-lg shadow-lg hover:shadow-2xl transition-shadow overflow-hidden flex flex-col"
             >
-              <img
-                src={image}
-                alt={title}
-                className="rounded-md duration-200 hover:scale-105 mb-4"
-              />
-              <div className="flex flex-col justify-center items-center">
-                <h3 className="text-lg font-semibold text-[#915EFF]">
+              <div className="overflow-hidden">
+                <img
+                  src={image}
+                  alt={title}
+                  className="rounded-t-lg w-full h-48 sm:h-56 md:h-48 object-cover transition-transform duration-300 hover:scale-105"
+                />
+              </div>
+              <div className="p-5 flex flex-col justify-between flex-1">
+                <h3 className="text-xl font-semibold text-[#915EFF] mb-2">
                   {title}
                 </h3>
-                <p className="text-sm text-center p-2 text-gray-300">
-                  {description}
+                <p className="text-gray-300 text-sm mb-4">
+                  {readMore[id] ? description : `${description.slice(0, 100)}...`}
+                  {description.length > 100 && (
+                    <button
+                      onClick={() => toggleReadMore(id)}
+                      className="text-cyan-400 ml-2 font-semibold hover:underline"
+                    >
+                      {readMore[id] ? "Show Less" : "Read More"}
+                    </button>
+                  )}
                 </p>
                 <a
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-1/2 px-6 py-2 mt-4 duration-200 hover:scale-105 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-md text-center"
+                  className="mt-auto bg-gradient-to-r from-cyan-500 to-blue-500 text-white text-center py-2 px-4 rounded-md hover:scale-105 transition-transform duration-300 font-semibold"
                 >
                   View Project
                 </a>

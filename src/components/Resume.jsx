@@ -1,8 +1,8 @@
-import { FaFileDownload } from 'react-icons/fa';
+import { FaFileDownload } from "react-icons/fa";
 
 const Resume = () => {
   return (
-    <div className="w-full flex justify-center items-center py-10 bg-primary text-white">
+    <div id="resume" className="w-full flex justify-center items-center py-10 bg-primary text-white">
       <div className="floating-resume bg-gradient-to-r from-cyan-500 to-blue-500 p-8 rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-300 max-w-2xl mx-4">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold mb-6">Download My Resume</h2>
