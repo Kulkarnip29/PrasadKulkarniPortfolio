@@ -9,6 +9,7 @@ import {
   FaNpm,
   FaDatabase,
   FaAws,
+  FaDocker,
   FaBootstrap,
   FaVuejs,
 } from 'react-icons/fa';
@@ -48,6 +49,7 @@ const Skills = () => {
     { name: "GitHub", icon: <SiGithub size={50} className="text-gray-400"/>},
     { name: "SQL", icon: <FaDatabase size={50} className="text-blue-400" /> },
     {name: "Aws", icon: <FaAws size={50} className="text-orange-500"/>},
+    {name: "Docker", icon: <FaDocker size={50} className="text-blue-400"/>},
     { name: "WordPress", icon: <SiWordpress size={50} className="text-sky-600"/>},
     { name: "php", icon: <SiPhp size={50} className="text-purple-600"/>}
   ];
